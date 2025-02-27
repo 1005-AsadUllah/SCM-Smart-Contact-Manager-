@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <h1>
-        This is  about page
-    </h1>
-    <hr>
-
-    <div th:insert="~{base :: parent(~{::h2})}">
-       <h2>This is dynamic content</h2>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+  <head>
+    <title>About Page</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Welcome to about page.</h1>
     </div>
 
-
-</body>
+    <script>
+      console.log("About page");
+    </script>
+  </body>
 </html>

@@ -1,4 +1,3 @@
-
 // import { defineConfig } from 'vite'
 // import tailwindcss from '@tailwindcss/vite'
 // export default defineConfig({
@@ -9,11 +8,11 @@
 
 /** @type {import('tailwindcss').Config} */
 
-export default{
+export default {
   content: [".src/main/resources/**/*.{html,js}"],
-  theme:{
-    extend:{},
+  theme: {
+    extend: {},
   },
-  plugins:[],
-  darkMode:"selector",
-}
+  plugins: [],
+  darkMode: "selector",
+};
